@@ -1,0 +1,28 @@
+.menu_active {
+  font-size: bold;
+  border-bottom: 1px solid #565387;
+}
+.btn-get-started {
+  position: absolute;
+  width: 184px;
+  height: 40px;
+  background: #ffffff;
+  mix-blend-mode: multiply;
+  border: 2px solid #464647;
+  box-sizing: border-box;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 20px;
+  text-decoration: none;
+}
+.btn-get-started:hover {
+  background-color: #3f3cf5;
+  color: white;
+}
+
+#header {
+  margin-top: 80px;
+}
+.header-img {
+  margin-top: 20px;
+}

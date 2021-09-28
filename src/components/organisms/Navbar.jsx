@@ -1,0 +1,82 @@
+import React from "react";
+import { NavLink } from "react-router-dom";
+import "./index1.css";
+const Navbar = () => {
+  return (
+    <>
+      <div className="row">
+        <div className="col-10 mx-auto">
+          <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <div className="container-fluid">
+              <button
+                className="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span className="navbar-toggler-icon"></span>
+              </button>
+              <div
+                className="collapse navbar-collapse"
+                id="navbarSupportedContent"
+              >
+                <ul className="navbar-nav">
+                  <li className="nav-item">
+                    <NavLink
+                      activeClassName="menu_active"
+                      className="nav-link"
+                      to="/"
+                    >
+                      Home
+                    </NavLink>
+                  </li>
+                  <li className="nav-item">
+                    <NavLink
+                      activeClassName="menu_active"
+                      className="nav-link"
+                      to="/features"
+                    >
+                      Features
+                    </NavLink>
+                  </li>
+                  <li className="nav-item">
+                    <NavLink
+                      activeClassName="menu_active"
+                      className="nav-link"
+                      to="/download"
+                    >
+                      Download
+                    </NavLink>
+                  </li>
+                  <li className="nav-item">
+                    <NavLink
+                      activeClassName="menu_active"
+                      className="nav-link"
+                      to="/contact"
+                    >
+                      Contact
+                    </NavLink>
+                  </li>
+                  <li className="nav-item">
+                    <NavLink
+                      activeClassName="menu_active"
+                      className="nav-link"
+                      to="/about"
+                    >
+                      About
+                    </NavLink>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Navbar;
